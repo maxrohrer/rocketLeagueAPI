@@ -17,12 +17,12 @@ public class CarController {
 
     @GetMapping("/cars")
     public List<Car> getAllCars() {
+//        TODO: add different calls to factory and logic to make calls based on filters in body
         return carRepository.findAll();
     }
 
     @GetMapping("/cars/{id}")
     public Car getCarById(int id) {
-        Car car = new Car();
-        return car;
+        return carRepository.findOne(id);
     }
 }

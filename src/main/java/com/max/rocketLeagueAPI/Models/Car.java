@@ -1,20 +1,58 @@
 package com.max.rocketLeagueAPI.Models;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import java.sql.Timestamp;
 import java.util.Date;
 
+@Entity
+@Table(name = "cars")
 public class Car {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "car_id")
     private int id;
+
     private String name;
-    private String style;
     private String rarity;
+    private String platform;
+    @Column(name = "img_url")
     private String imgUrl;
-    private boolean specialEdition;
     private boolean free;
-    private Date updatedAt;
+    @Column(name = "updated_at")
+    private Timestamp updatedAt;
 
     public Car() {}
 
+    public int getId() {
+        return this.id;
+    }
+
     public String getName() {
         return this.name;
+    }
+
+    public String getRarity() {
+        return this.rarity;
+    }
+
+    public String getPlatform() {
+        return this.platform;
+    }
+
+    public String getImgUrl() {
+        return this.imgUrl;
+    }
+
+    public boolean isFree() {
+        return this.free;
+    }
+
+    public Timestamp getUpdatedAt() {
+        return this.updatedAt;
     }
 }
