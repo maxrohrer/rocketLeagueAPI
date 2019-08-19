@@ -16,6 +16,8 @@ public class Car {
     @Column(name = "car_id")
     private int id;
     private String name;
+    @Column(name = "body_type")
+    private String bodyType;
     private String rarity;
     private String platform;
     @Column(name = "img_url")
