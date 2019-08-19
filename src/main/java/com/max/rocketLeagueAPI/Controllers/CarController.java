@@ -15,7 +15,7 @@ import java.util.Map;
 public class CarController {
 
     @Autowired
-    CarRepository carRepository;
+    private CarRepository carRepository;
 
 //    TODO: see if a seperate method should be extracted from get cars route
     public void filterCarList(Map<String, String> params) {
@@ -34,6 +34,7 @@ public class CarController {
             if(body.get("rarity") != null) return carRepository.findByRarityAndFree(body.get("rarity"), free);
             else return carRepository.findByFree(free);
         }
+        return null;
     }
 
     @GetMapping("/cars/{id}")

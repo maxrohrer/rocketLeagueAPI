@@ -7,7 +7,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import java.sql.Timestamp;
-import java.util.Date;
 
 @Entity
 @Table(name = "cars")
@@ -16,7 +15,6 @@ public class Car {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "car_id")
     private int id;
-
     private String name;
     private String rarity;
     private String platform;
