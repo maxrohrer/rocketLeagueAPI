@@ -31,27 +31,19 @@ public class Car {
     public int getId() {
         return this.id;
     }
-
     public String getName() {
         return this.name;
     }
-
     public String getRarity() {
         return this.rarity;
     }
-
-    public String getPlatform() {
-        return this.platform;
-    }
-
+    public String getPlatform() { return this.platform; }
     public String getImgUrl() {
         return this.imgUrl;
     }
-
     public boolean isFree() {
         return this.free;
     }
-
     public Timestamp getUpdatedAt() {
         return this.updatedAt;
     }
