@@ -17,6 +17,8 @@ public class RocketTrail {
     private int id;
     private String name;
     private String rarity;
+    @Column(name = "acquired_by")
+    private String acquiredBy;
     @Column(name = "img_url")
     private String imgUrl;
     @Column(name = "updated_at")
@@ -25,6 +27,7 @@ public class RocketTrail {
     public int getId() { return this.id; }
     public String getName() { return this.name; }
     public String getRarity() { return this.rarity; }
+    public String getAcquiredBy() { return this.acquiredBy; }
     public String getImgUrl() { return this.imgUrl; }
     public Timestamp getUpdatedAt() { return this.updatedAt; }
 }

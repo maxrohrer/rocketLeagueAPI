@@ -19,6 +19,8 @@ public class Car {
     @Column(name = "body_type")
     private String bodyType;
     private String rarity;
+    @Column(name = "acquired_by")
+    private String acquiredBy;
     private String platform;
     @Column(name = "img_url")
     private String imgUrl;
@@ -36,6 +38,7 @@ public class Car {
     public String getRarity() {
         return this.rarity;
     }
+    public String getAcquiredBy() { return this.acquiredBy; }
     public String getPlatform() { return this.platform; }
     public String getImgUrl() {
         return this.imgUrl;

@@ -6,14 +6,13 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import java.sql.Timestamp;
 
 @Entity
-@Table(name = "toppers")
-public class Topper {
+@Table(name = "goal_explosions")
+public class GoalExplosion {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "topper_id")
+    @Column(name = "goal_explosion_id")
     private int id;
     private String name;
     private String rarity;
@@ -22,12 +21,12 @@ public class Topper {
     @Column(name = "img_url")
     private String imgUrl;
     @Column(name = "updated_at")
-    private Timestamp updatedAt;
+    private String updatedAt;
 
     public int getId() { return id; }
     public String getName() { return name; }
     public String getRarity() { return rarity; }
     public String getAcquiredBy() { return acquiredBy; }
     public String getImgUrl() { return imgUrl; }
-    public Timestamp getUpdatedAt() { return updatedAt; }
+    public String getUpdatedAt() { return updatedAt; }
 }
