@@ -9,10 +9,11 @@ import javax.persistence.Table;
 import java.sql.Timestamp;
 
 @Entity
-@Table(name = "rocketTrails")
+@Table(name = "rocket_trails")
 public class RocketTrail {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "rocket_trail_id")
     private int id;
     private String name;
     private String rarity;

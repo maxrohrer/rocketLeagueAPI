@@ -14,7 +14,6 @@ import java.util.Map;
 
 @RestController
 public class CarController {
-
     @Autowired
     private CarRepository carRepository;
 
