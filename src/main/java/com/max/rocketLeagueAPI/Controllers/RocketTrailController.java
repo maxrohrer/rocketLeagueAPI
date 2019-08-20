@@ -17,8 +17,7 @@ public class RocketTrailController {
 
     @GetMapping("/rocket-trails")
     public List<RocketTrail> getAllRocketTrails(@RequestParam(name = "rarity") Optional<String> rarity) {
-//        TODO: add optional rarity param
-        return rocketTrailRepository.findByRarity(rarity);
-//        else return rocketTrailRepository.findAll();
+        if(rarity.isPresent()) { return rocketTrailRepository.findByRarity(rarity); }
+        else return rocketTrailRepository.findAll();
     }
 }
