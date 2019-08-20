@@ -22,7 +22,6 @@ public class Car {
     private String platform;
     @Column(name = "img_url")
     private String imgUrl;
-    private boolean free;
     @Column(name = "updated_at")
     private Timestamp updatedAt;
 
@@ -40,9 +39,6 @@ public class Car {
     public String getPlatform() { return this.platform; }
     public String getImgUrl() {
         return this.imgUrl;
-    }
-    public boolean isFree() {
-        return this.free;
     }
     public Timestamp getUpdatedAt() {
         return this.updatedAt;
