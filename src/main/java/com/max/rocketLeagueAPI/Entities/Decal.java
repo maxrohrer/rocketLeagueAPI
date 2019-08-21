@@ -1,4 +1,4 @@
-package com.max.rocketLeagueAPI.Models;
+package com.max.rocketLeagueAPI.Entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -9,41 +9,42 @@ import javax.persistence.Table;
 import java.sql.Timestamp;
 
 @Entity
-@Table(name = "cars")
-public class Car {
+@Table(name = "decals")
+public class Decal {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "car_id")
+    @Column(name = "decal_id")
     private int id;
     private String name;
-    @Column(name = "body_type")
-    private String bodyType;
     private String rarity;
     @Column(name = "acquired_by")
     private String acquiredBy;
-    private String platform;
     @Column(name = "img_url")
     private String imgUrl;
     @Column(name = "updated_at")
     private Timestamp updatedAt;
 
-    public Car() {}
-
     public int getId() {
-        return this.id;
+        return id;
     }
+
     public String getName() {
-        return this.name;
+        return name;
     }
+
     public String getRarity() {
-        return this.rarity;
+        return rarity;
     }
-    public String getAcquiredBy() { return this.acquiredBy; }
-    public String getPlatform() { return this.platform; }
+
+    public String getAcquiredBy() {
+        return acquiredBy;
+    }
+
     public String getImgUrl() {
-        return this.imgUrl;
+        return imgUrl;
     }
+
     public Timestamp getUpdatedAt() {
-        return this.updatedAt;
+        return updatedAt;
     }
 }

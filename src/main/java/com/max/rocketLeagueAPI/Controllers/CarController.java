@@ -1,6 +1,6 @@
 package com.max.rocketLeagueAPI.Controllers;
 
-import com.max.rocketLeagueAPI.Models.Car;
+import com.max.rocketLeagueAPI.Entities.Car;
 import com.max.rocketLeagueAPI.Repositories.CarRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

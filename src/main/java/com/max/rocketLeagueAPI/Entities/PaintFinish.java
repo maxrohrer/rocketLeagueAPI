@@ -1,4 +1,4 @@
-package com.max.rocketLeagueAPI.Models;
+package com.max.rocketLeagueAPI.Entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -6,13 +6,14 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.sql.Timestamp;
 
 @Entity
-@Table(name = "goal_explosions")
-public class GoalExplosion {
+@Table(name = "paint_finishes")
+public class PaintFinish {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "goal_explosion_id")
+    @Column(name = "paint_finish_id")
     private int id;
     private String name;
     private String rarity;
@@ -21,12 +22,12 @@ public class GoalExplosion {
     @Column(name = "img_url")
     private String imgUrl;
     @Column(name = "updated_at")
-    private String updatedAt;
+    private Timestamp updatedAt;
 
     public int getId() { return id; }
     public String getName() { return name; }
     public String getRarity() { return rarity; }
     public String getAcquiredBy() { return acquiredBy; }
     public String getImgUrl() { return imgUrl; }
-    public String getUpdatedAt() { return updatedAt; }
+    public Timestamp getUpdatedAt() { return updatedAt; }
 }

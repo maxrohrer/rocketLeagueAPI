@@ -1,4 +1,4 @@
-package com.max.rocketLeagueAPI.Models;
+package com.max.rocketLeagueAPI.Entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
