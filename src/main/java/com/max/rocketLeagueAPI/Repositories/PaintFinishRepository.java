@@ -1,6 +1,6 @@
 package com.max.rocketLeagueAPI.Repositories;
 
-import com.max.rocketLeagueAPI.Entities.Collectibles.PaintFinish;
+import com.max.rocketLeagueAPI.Entities.Collectables.PaintFinish;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

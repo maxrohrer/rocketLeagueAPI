@@ -1,4 +1,4 @@
-package com.max.rocketLeagueAPI.Entities.Collectibles;
+package com.max.rocketLeagueAPI.Entities.Collectables;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

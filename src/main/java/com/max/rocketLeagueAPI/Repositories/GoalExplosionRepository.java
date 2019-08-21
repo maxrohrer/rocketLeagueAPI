@@ -1,6 +1,6 @@
 package com.max.rocketLeagueAPI.Repositories;
 
-import com.max.rocketLeagueAPI.Entities.Collectibles.GoalExplosion;
+import com.max.rocketLeagueAPI.Entities.Collectables.GoalExplosion;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

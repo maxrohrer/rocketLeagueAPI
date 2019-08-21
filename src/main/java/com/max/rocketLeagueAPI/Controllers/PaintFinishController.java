@@ -1,6 +1,6 @@
 package com.max.rocketLeagueAPI.Controllers;
 
-import com.max.rocketLeagueAPI.Entities.Collectibles.PaintFinish;
+import com.max.rocketLeagueAPI.Entities.Collectables.PaintFinish;
 import com.max.rocketLeagueAPI.Repositories.PaintFinishRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

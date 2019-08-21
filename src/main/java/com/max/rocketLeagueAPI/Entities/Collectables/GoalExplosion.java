@@ -1,4 +1,4 @@
-package com.max.rocketLeagueAPI.Entities.Collectibles;
+package com.max.rocketLeagueAPI.Entities.Collectables;
 
 import com.max.rocketLeagueAPI.Entities.Collectable;
 

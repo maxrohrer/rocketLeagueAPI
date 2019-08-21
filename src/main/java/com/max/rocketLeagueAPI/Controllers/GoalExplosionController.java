@@ -1,6 +1,6 @@
 package com.max.rocketLeagueAPI.Controllers;
 
-import com.max.rocketLeagueAPI.Entities.Collectibles.GoalExplosion;
+import com.max.rocketLeagueAPI.Entities.Collectables.GoalExplosion;
 import com.max.rocketLeagueAPI.Repositories.GoalExplosionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

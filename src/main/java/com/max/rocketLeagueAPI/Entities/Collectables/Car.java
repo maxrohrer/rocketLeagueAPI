@@ -1,4 +1,4 @@
-package com.max.rocketLeagueAPI.Entities.Collectibles;
+package com.max.rocketLeagueAPI.Entities.Collectables;
 
 import com.max.rocketLeagueAPI.Entities.Collectable;
 
@@ -10,14 +10,20 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "decals")
-public class Decal extends Collectable {
+@Table(name = "cars")
+public class Car extends Collectable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "decal_id")
+    @Column(name = "car_id")
     private int id;
+    @Column(name = "body_type")
+    private String bodyType;
+    private String platform;
+
+    public Car() {}
 
     public int getId() {
-        return id;
+        return this.id;
     }
+    public String getPlatform() { return this.platform; }
 }

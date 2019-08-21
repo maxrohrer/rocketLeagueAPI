@@ -1,6 +1,6 @@
 package com.max.rocketLeagueAPI.Repositories;
 
-import com.max.rocketLeagueAPI.Entities.Collectibles.Topper;
+import com.max.rocketLeagueAPI.Entities.Collectables.Topper;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

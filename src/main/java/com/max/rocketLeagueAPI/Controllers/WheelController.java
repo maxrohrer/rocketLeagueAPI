@@ -1,6 +1,6 @@
 package com.max.rocketLeagueAPI.Controllers;
 
-import com.max.rocketLeagueAPI.Entities.Collectibles.Wheel;
+import com.max.rocketLeagueAPI.Entities.Collectables.Wheel;
 import com.max.rocketLeagueAPI.Repositories.WheelRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
