@@ -1,6 +1,6 @@
 package com.max.rocketLeagueAPI.Controllers;
 
-import com.max.rocketLeagueAPI.Entities.Topper;
+import com.max.rocketLeagueAPI.Entities.Collectibles.Topper;
 import com.max.rocketLeagueAPI.Repositories.TopperRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

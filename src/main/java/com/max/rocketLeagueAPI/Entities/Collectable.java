@@ -1,20 +1,18 @@
 package com.max.rocketLeagueAPI.Entities;
 
 import javax.persistence.Column;
-import javax.persistence.Entity;
+
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.MappedSuperclass;
 import java.sql.Timestamp;
 
-@Entity
-@Table(name = "decals")
-public class Decal {
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "decal_id")
-    private int id;
+@MappedSuperclass
+public class Collectable {
+//    @Id
+//    @GeneratedValue(strategy = GenerationType.AUTO)
+//    private int id;
     private String name;
     private String rarity;
     @Column(name = "acquired_by")
@@ -24,9 +22,9 @@ public class Decal {
     @Column(name = "updated_at")
     private Timestamp updatedAt;
 
-    public int getId() {
-        return id;
-    }
+//    public int getId() {
+//        return id;
+//    }
 
     public String getName() {
         return name;

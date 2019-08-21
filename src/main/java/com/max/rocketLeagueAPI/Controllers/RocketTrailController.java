@@ -1,6 +1,6 @@
 package com.max.rocketLeagueAPI.Controllers;
 
-import com.max.rocketLeagueAPI.Entities.RocketTrail;
+import com.max.rocketLeagueAPI.Entities.Collectibles.RocketTrail;
 import com.max.rocketLeagueAPI.Repositories.RocketTrailRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

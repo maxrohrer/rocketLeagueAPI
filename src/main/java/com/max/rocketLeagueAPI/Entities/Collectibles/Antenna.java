@@ -1,4 +1,4 @@
-package com.max.rocketLeagueAPI.Entities;
+package com.max.rocketLeagueAPI.Entities.Collectibles;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -9,11 +9,11 @@ import javax.persistence.Table;
 import java.sql.Timestamp;
 
 @Entity
-@Table(name = "rocket_trails")
-public class RocketTrail {
+@Table(name = "antennas")
+public class Antenna {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "rocket_trail_id")
+    @Column(name = "antenna_id")
     private int id;
     private String name;
     private String rarity;
@@ -24,10 +24,10 @@ public class RocketTrail {
     @Column(name = "updated_at")
     private Timestamp updatedAt;
 
-    public int getId() { return this.id; }
-    public String getName() { return this.name; }
-    public String getRarity() { return this.rarity; }
-    public String getAcquiredBy() { return this.acquiredBy; }
-    public String getImgUrl() { return this.imgUrl; }
-    public Timestamp getUpdatedAt() { return this.updatedAt; }
+    public int getId() { return id; }
+    public String getName() { return name; }
+    public String getRarity() { return rarity; }
+    public String getAcquiredBy() { return acquiredBy; }
+    public String getImgUrl() { return imgUrl; }
+    public Timestamp getUpdatedAt() { return updatedAt; }
 }
