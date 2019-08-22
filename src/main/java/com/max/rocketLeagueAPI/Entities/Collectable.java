@@ -10,9 +10,9 @@ import java.sql.Timestamp;
 
 @MappedSuperclass
 public class Collectable {
-//    @Id
-//    @GeneratedValue(strategy = GenerationType.AUTO)
-//    private int id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private int id;
     private String name;
     private String rarity;
     @Column(name = "acquired_by")
@@ -22,9 +22,7 @@ public class Collectable {
     @Column(name = "updated_at")
     private Timestamp updatedAt;
 
-//    public int getId() {
-//        return id;
-//    }
+    public int getId() { return id; }
 
     public String getName() {
         return name;

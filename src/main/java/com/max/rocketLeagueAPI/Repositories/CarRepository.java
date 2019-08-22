@@ -12,6 +12,7 @@ public interface CarRepository extends JpaRepository<Car, Integer> {
     // car filters
     List<Car> findByPlatform(Optional<String> platform);
     List<Car> findByRarity(Optional<String> rarity);
+//    List<Car> findByBodyStyle(Optional<String> bodyStyle);
 
     Car findOneByName(String name);
 }
