@@ -24,13 +24,13 @@ public class CarController {
 
     @GetMapping("/cars")
     public List<Car> getCars(
-//            @RequestParam(name = "body-style") Optional<String> bodyStyle,
+            @RequestParam(name = "body-type") Optional<String> bodyType,
             @RequestParam(name = "rarity") Optional<String> rarity,
             @RequestParam(name = "platform") Optional<String> platform
     ) {
         if(platform.isPresent()) return carRepository.findByPlatform(platform);
         else if(rarity.isPresent()) return carRepository.findByRarity(rarity);
-//        else if(bodyStyle.isPresent()) return carRepository.findByBodyStyle((bodyStyle));
+        else if(bodyType.isPresent()) return carRepository.findByBodyType((bodyType));
         else return carRepository.findAll();
     }
 
