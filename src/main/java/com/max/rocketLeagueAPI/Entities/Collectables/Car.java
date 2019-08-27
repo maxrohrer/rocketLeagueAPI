@@ -2,9 +2,8 @@ package com.max.rocketLeagueAPI.Entities.Collectables;
 
 import com.max.rocketLeagueAPI.Entities.Collectable;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "cars")
@@ -14,10 +13,19 @@ public class Car extends Collectable {
     @Column(name = "body_type")
     private String bodyType;
     private String platform;
+    @ManyToMany(cascade = {CascadeType.ALL})
+    @JoinTable(
+            name = "car_decals",
+            joinColumns = {@JoinColumn(name = "car_id")},
+            inverseJoinColumns = {@JoinColumn(name = "decal_id")}
+    )
+    private List<Decal> decals;
 
     public Car() {}
 
     public String getBodyType() { return bodyType; }
 
     public String getPlatform() { return this.platform; }
+
+    public List<Decal> getDecals() { return this.decals; }
 }
